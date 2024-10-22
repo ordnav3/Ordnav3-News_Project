@@ -7,27 +7,23 @@ import * as V from '../../styles/variaveis';
 export const HeaderStyled = styled.header`
   background-color: ${V.PrymaryColor};
   padding: 15px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 `;
 
 export const ContainerHeader = styled(Container)`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  height: 60px;
 `;
 
 export const ImgS = styled.img`
   border-radius: 50%;
-`;
-
-export const InputS = styled.input`
   width: 70px;
-  height: 20px;
-  border: none;
-  text-align: center;
-`;
-
-export const ButtonS = styled.button`
-  padding: 0 5px;
-  height: 20px;
-  border: none;
+  height: 70px;
+  cursor: pointer;
 `;

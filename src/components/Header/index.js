@@ -1,49 +1,17 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 
 import {
-  Dropdown, NavItem, NavLink, InputGroup,
-} from 'react-bootstrap';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { FaSearch } from 'react-icons/fa';
-
-import { IconContext } from 'react-icons';
-import {
-  HeaderStyled, ContainerHeader, InputS, ButtonS,
+  HeaderStyled, ContainerHeader,
   ImgS,
 } from './style';
 
 export default function Header() {
-  const img = 'https://picsum.photos/50';
+  const img = 'https://live.staticflickr.com/5091/5389831279_627a7bd649_b.jpg';
+
   return (
     <HeaderStyled>
       <ContainerHeader>
-
-        <Dropdown as={NavItem}>
-          <Dropdown.Toggle as={NavLink}>
-
-            <IconContext.Provider
-              // eslint-disable-next-line react/jsx-no-constructed-context-values
-              value={{ color: '#EBF2FA', size: '35px' }}
-            >
-              <RxHamburgerMenu />
-            </IconContext.Provider>
-
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <Dropdown.Item>Hello there!</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-
         <ImgS src={img} alt="Imagem lorem" />
-
-        <InputGroup>
-          <InputS />
-          <ButtonS>
-            <FaSearch />
-          </ButtonS>
-        </InputGroup>
-
       </ContainerHeader>
     </HeaderStyled>
 
